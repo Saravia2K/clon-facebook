@@ -1,14 +1,9 @@
-import { Route, Router } from "wouter";
+import { Route } from "wouter";
 import "./App.css";
 import Login from "./pages/Login";
-import { useHashLocation } from "wouter/use-hash-location";
 
 function App() {
-  return (
-    <Router hook={useHashLocation}>
-      <Route path="/login" component={Login} />
-    </Router>
-  );
+  return <Route path="/login" component={Login} />;
 }
 
 export default App;
